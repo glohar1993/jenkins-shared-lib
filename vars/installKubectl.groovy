@@ -13,7 +13,7 @@ def call(String clusterName = 'mlops-cluster', String awsRegion = 'us-east-2') {
             mv kubectl ~/bin/kubectl
         fi
         export PATH=\$PATH:~/bin
-        kubectl version --client --short
+        kubectl version --client
 
         # Configure EKS kubeconfig
         aws eks update-kubeconfig \
